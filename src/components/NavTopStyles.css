@@ -1,0 +1,16 @@
+.nav-top{
+    background-color: black;
+    text-align: center;
+    color: lightgreen;
+    padding: 0.1rem 0;
+}
+
+@media screen and (max-width: 850px) {
+    .nav-top{
+        padding: 0.1rem 0.2rem;
+    }
+
+    .nav-top p{
+        font-size: 0.9rem;
+    }
+}

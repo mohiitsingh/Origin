@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import "./App.css";
+import Caraousel from "./components/Caraousel";
+import { Route, Routes } from "react-router-dom";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Blog from "./routes/Blog";
+import Footer from "./components/Footer";
+import Section1 from "./components/Section1";
+import OurClient from "./components/OurClient";
+import BlogPost from "./components/BlogPost";
+import Testimonial from "./components/Testimonial";
+import ChooseUs from "./components/ChooseUs";
+import ProductCard from "./components/Product/ProductCard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+      </Routes>
+      <Caraousel />
+      <Section1 />
+      <ProductCard/>
+      <Testimonial />
+      <ChooseUs />
+      <BlogPost />
+      <OurClient />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.megalink-container{
+    background-color: antiquewhite;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.megalink-container a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 850px) {
+    .megalink-container{
+        justify-content: space-around;
+        gap: 0 1rem ;
+        padding: 0.5rem;
+    }
+}
